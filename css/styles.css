@@ -22,13 +22,24 @@ a{
 }
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+
 }
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .container{
     margin-left: auto;
-    margin-right: auto;
-    width: 1440px;
+    margin-right: auto; 
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 2px solid tomato;
 }
+
 .logo{
     font-family: Raleway, sans-serif;
     color: var(--logo-color);
@@ -47,6 +58,7 @@ letter-spacing: 0.03em;
 }
 .logo-web{
     color: var(--accent-color);
+
 }
 .header {
     font-weight: 500;
@@ -71,27 +83,38 @@ letter-spacing: 0.03em;
 .contacts .telefon{
     color: var(--main-color);
 }
+.hero{
+    text-align: center;
+}
 .hero .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--additional-color);
     background-color: var(--bgc-secondary) ;
     text-transform: uppercase;
+    margin-bottom: 30px;
 } 
 .hero-button{
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-text-align: center;
 letter-spacing: 0.06em;
 color: var(--additional-color);
 background-color: var(--accent-color);
+display: inline-block;
+min-width: 200px;
+border-radius: 4px;
+padding: 10px 32px;
+}
+.section-work{
+    margin-top: 94px;
+
 }
 .section-team{
     background-color: var(--bgc-additional) ;
+    margin-top: 94px;
 }
 .section-title{
 color: var(--secondary-color);
@@ -99,8 +122,12 @@ color: var(--secondary-color);
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
+padding-top: 94px;
 }
 /* наши качества*/
+.our-quality.container{
+    margin-top: 94px;
+}
 .quality .quality-title{
 color: var(--secondary-color);
     font-weight: 700;
@@ -108,6 +135,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 .quality .quality-text{
 font-weight: 400;
@@ -121,6 +149,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 }
 .team .team-prof{
 font-weight: 400;
@@ -139,10 +168,14 @@ letter-spacing: 0.03em;
 .footer .address{
 color: var(--additional-color);
 font-style: normal;
+margin-top: 20px;
 }
 .footer .address-tel{
 color: var(--contacts-color);
 font-style: normal;
+}
+.footer.container{
+    padding-top: 60px;
 }
 /*стили Портфолио*/
 .portfolio h2{
@@ -158,7 +191,9 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--main-color);
-
+}
+.projects.container{
+    margin-top: 94px;
 }
 .filter-button{
 font-weight: 500;
@@ -167,7 +202,12 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--secondary-color);
-font-family: Roboto, sans-serif; 
+font-family: Roboto, sans-serif;
+border-radius: 4px;
+padding: 6px 22px;
+}
+.footer{
+    margin-top: 94px;
 }
 .filter .filter-button:hover,
 .filter .filter-button:focus{
