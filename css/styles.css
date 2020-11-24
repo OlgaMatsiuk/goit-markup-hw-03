@@ -147,41 +147,7 @@ min-width: 200px;
 border-radius: 4px;
 padding: 10px 32px;
 }
-.section-work{
-padding-top: 94px;
-padding-bottom: 94px;
-}
-.section-team{
-    background-color: var(--bgc-additional) ;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section-team .team{
-    display: flex;
-}
-.team .item{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: var(--bgc-main)
-}
-.team .item + .item{
-    margin-left: 30px;
-}
-.section-title{
-color: var(--secondary-color);
-    font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-margin-bottom: 50px;
-}
-.section-work-list{
-    display: flex;
-}
-.section-work-list .item + .item{
-    margin-left: 30px;
-}
-/* наши качества*/
+/*наши качества*/
 .our-quality{
     padding-top: 94px;
 }
@@ -208,6 +174,69 @@ line-height: 1.71;
 .quality .quality-item + .quality-item{
     margin-left: 30px;
 }
+.section-work{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.section-team{
+    background-color: var(--bgc-additional) ;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-team .team{
+    display: flex;
+}
+.team img{
+    display: block;
+}
+.team .item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--bgc-main);
+    width: 270px;
+}
+
+.team .item + .item{
+    margin-left: 30px;
+}
+.team-worker{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+.team .team-name{
+    color: var(--secondary-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+margin-bottom: 10px;
+}
+.team .team-prof{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+}
+.section-title{
+color: var(--secondary-color);
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+margin-bottom: 50px;
+}
+.section-work-list img{
+    display: block;
+}
+.section-work-list{
+    display: flex;
+}
+.section-work-list .item + .item{
+    margin-left: 30px;
+}
+
 .team .team-name{
     color: var(--secondary-color);
 font-weight: 500;
@@ -216,7 +245,6 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 10px;
-margin-top: 30px;
 }
 .team .team-prof{
 font-weight: 400;
@@ -224,7 +252,6 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 30px;
 }
 .footer{
 background-color: var(--bgc-secondary) ;
@@ -236,7 +263,9 @@ letter-spacing: 0.03em;
 .footer .address{
 color: var(--additional-color);
 font-style: normal;
-margin-top: 20px;
+}
+.footer-address{
+    margin-top: 20px;
 }
 .address-tel{
     display: flex;
@@ -268,6 +297,16 @@ color: var(--main-color);
 .projects.container{
 padding-top: 94px;
 padding-bottom: 94px;
+}
+.visually-hidder{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .filter-button{
 font-weight: 500;
